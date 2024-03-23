@@ -90,7 +90,7 @@ class CategoryController extends Controller
     public function destroy($id) {
         DB::table('categories')->where('id', $id)->delete();
             return response()->json([
-                'message' => 'Category Deleted Successfully',
+                'message' => 'Category Deleted Successfully!!!',
             ]);
         }
 }
