@@ -11,10 +11,7 @@ use Illuminate\Support\Str;
 
 class CategoryController extends Controller
 {
-    /**
-     * create a new Controller instance
-     * @return void
-     */
+   //construct method
     public function __construct(){
         $this->middleware('admin');
     }

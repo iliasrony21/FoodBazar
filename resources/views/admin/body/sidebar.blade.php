@@ -34,7 +34,7 @@
                 </li>
             {{--  @endif  --}}
             {{--  @if(Auth::user()->can('category.add'))  --}}
-                <li> <a href=""><i class="bx bx-right-arrow-alt"></i>Add Category</a>
+                <li> <a href="{{ route('subcategory') }}"><i class="bx bx-right-arrow-alt"></i>Subcategory</a>
                 </li>
             {{--  @endif  --}}
             </ul>
