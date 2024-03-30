@@ -1,5 +1,5 @@
 @extends('admin.admin_master')
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css">
+{{--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css">  --}}
 @section('admin')
     <div class="card content-header">
         <div class="container-fluid">
@@ -143,10 +143,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 //<!-- DataTables -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js"></script>
-<script>
-    $('.dropify').dropify();
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js"></script>  --}}
+
+
 <script>
 
        // All Data for Category data table
@@ -160,8 +159,8 @@
                     name: 'DT_RowIndex'
                 },
                 {
-                    data: 'category_id',
-                    name: 'category_id'
+                    data: 'category_name',
+                    name: 'category_name'
                 },
                 {
                     data: 'subcategory_name',
@@ -216,7 +215,7 @@
 
         $('body').on('click', '.edit', function() {
             let id = $(this).data('id');
-            let url = "{{ url('admin/category/edit') }}/" + id;
+            let url = "{{ url('admin/subcategory/edit') }}/" + id;
             $.ajax({
                 url: url,
                 type: 'get',
@@ -228,7 +227,7 @@
         });
 
         $(document).ready(function() {
-            $(document).on('click', '#deleteCat', function(e) {
+            $(document).on('click', '#deleteSubCat', function(e) {
                 e.preventDefault();
                 var url = $(this).attr('href');
 

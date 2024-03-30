@@ -27,10 +27,10 @@ Route::middleware('admin')->prefix('admin')->group(function(){
     // subcategory part start
     Route::prefix('subcategory')->group(function(){
         Route::get('/',[SubCategoryController::class,'index'])->name('subcategory');
-        // Route::get('/edit/{id}',[SubCategoryController::class,'edit'])->name('subcategory.edit');
-        // Route::delete('/delete/{id}',[SubCategoryController::class,'destroy'])->name('subcategory.delete');
+        Route::get('/edit/{id}',[SubCategoryController::class,'edit'])->name('subcategory.edit');
+        Route::delete('/delete/{id}',[SubCategoryController::class,'destroy'])->name('subcategory.delete');
         Route::post('/store',[SubCategoryController::class,'store'])->name('subcategory.store');
-        // Route::post('/update',[SubCategoryController::class,'update'])->name('subcategory.update');
+        Route::post('/update/{id}',[SubCategoryController::class,'update'])->name('subcategory.update');
 
     });
     // subcategory part end

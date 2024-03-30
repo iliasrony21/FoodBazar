@@ -26,6 +26,9 @@
 <!-- DataTable-->
 	<!-- Text Area CSS -->
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css">
+
+
 	<!-- FORM ELEMENTS CSS -->
 	<link href="{{ asset('backend/assets/plugins/input-tags/css/tagsinput.css') }}" rel="stylesheet" />
 	 <link href="{{asset('backend')}}/assets/plugins/input-tags/css/tagsinput.css" rel="stylesheet" />
@@ -65,32 +68,38 @@
 	   <!-- @include('admin.body.switcher')  -->
 	<!--end switcher-->
 	<!-- Bootstrap JS -->
-	<script src="{{asset('backend')}}/assets/js/bootstrap.bundle.min.js"></script>
+<script src="{{asset('backend')}}/assets/js/bootstrap.bundle.min.js"></script>
 
 	<!--plugins-->
     {{--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js"></script>  --}}
 
 	{{--  <script src="{{asset('backend')}}/assets/js/jquery.min.js"></script>  --}}
-	<script src="{{asset('backend')}}/jquery.min.js"></script>
-	<script src="{{asset('backend')}}/assets/js/code.js"></script>
-	<script src="{{asset('backend')}}/assets/plugins/simplebar/js/simplebar.min.js"></script>
-	<script src="{{asset('backend')}}/assets/plugins/metismenu/js/metisMenu.min.js"></script>
-	<script src="{{asset('backend')}}/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-	<script src="{{asset('backend')}}/assets/plugins/chartjs/js/Chart.min.js"></script>
-	<script src="{{asset('backend')}}/assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
-    <script src="{{asset('backend')}}/assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
-	<script src="{{asset('backend')}}/assets/plugins/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
-	<script src="{{asset('backend')}}/assets/plugins/sparkline-charts/jquery.sparkline.min.js"></script>
-	<script src="{{asset('backend')}}/assets/plugins/jquery-knob/excanvas.js"></script>
-	<script src="{{asset('backend')}}/assets/plugins/jquery-knob/jquery.knob.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	  <script>
+{{--  <script src="{{asset('backend')}}/jquery.min.js"></script>  --}}
+{{--  dropify   --}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js"></script>
+<script>
+    $('.dropify').dropify();
+</script>
+
+<script src="{{asset('backend')}}/assets/js/code.js"></script>
+<script src="{{asset('backend')}}/assets/plugins/simplebar/js/simplebar.min.js"></script>
+<script src="{{asset('backend')}}/assets/plugins/metismenu/js/metisMenu.min.js"></script>
+<script src="{{asset('backend')}}/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+<script src="{{asset('backend')}}/assets/plugins/chartjs/js/Chart.min.js"></script>
+<script src="{{asset('backend')}}/assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+<script src="{{asset('backend')}}/assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script src="{{asset('backend')}}/assets/plugins/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+<script src="{{asset('backend')}}/assets/plugins/sparkline-charts/jquery.sparkline.min.js"></script>
+<script src="{{asset('backend')}}/assets/plugins/jquery-knob/excanvas.js"></script>
+<script src="{{asset('backend')}}/assets/plugins/jquery-knob/jquery.knob.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
 		  $(function() {
 			  $(".knob").knob();
 		  });
 	  </script>
-	  <script src="{{asset('backend')}}/assets/js/index.js"></script>
+<script src="{{asset('backend')}}/assets/js/index.js"></script>
 	  {{--  <script src="{{asset('backend')}}/assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
 	  <script src="{{asset('backend/assets/plugins/datatable/js/dataTables.bootstrap5.min.js')}}"></script>  --}}
 	{{--  <script>
@@ -110,23 +119,23 @@
 		} );
 	</script>  --}}
 	<!-- FORM ELEMENTS CSS -->
-	<script src="{{ asset('backend/assets/plugins/input-tags/js/tagsinput.js') }}"></script>
+<script src="{{ asset('backend/assets/plugins/input-tags/js/tagsinput.js') }}"></script>
     <!-- Text Area js -->
- 	<script src='https://cdn.tiny.cloud/1/vdqx2klew412up5bcbpwivg1th6nrh3murc6maz8bukgos4v/tinymce/5/tinymce.min.js' referrerpolicy="origin">
+<script src='https://cdn.tiny.cloud/1/vdqx2klew412up5bcbpwivg1th6nrh3murc6maz8bukgos4v/tinymce/5/tinymce.min.js' referrerpolicy="origin">
 	</script>
 
-	<script>
+<script>
 		tinymce.init({
 		  selector: '#mytextarea'
 		});
 	</script>
 	<!--app JS-->
-	<script src="{{asset('backend')}}/assets/js/app.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="{{asset('backend')}}/assets/js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-		<script>
+<script>
 			@if(Session::has('message'))
 			var type = "{{ Session::get('alert-type','info') }}"
 			toastr.options = {
@@ -153,7 +162,7 @@
 			@endif
 	</script>
 
-	<script>
+<script>
         jQuery(function(){
 			jQuery(document).on('click','#delete' ,function(e){
 				e.preventDefault();
@@ -184,9 +193,9 @@
 	</script>
 
 	<!-- sweet alert -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-	<script>
+<script>
 		$(function(){
 			$(document).on('click','#delete',function(e){
 				e.preventDefault();
